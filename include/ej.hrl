@@ -69,7 +69,7 @@
 %% The return record for validity checks
 -record(ej_invalid, {
           type          :: ej_spec_type(),
-          key           :: binary(),
+          key           :: binary()             | undefined,
           found         :: json_term()          | undefined,
           found_type    :: ej_json_type_name()  | any_value | undefined,
           expected_type :: ej_json_type_name()  | any_value | undefined,
