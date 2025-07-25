@@ -807,9 +807,9 @@ dedup(L) when is_list(L) ->
 ej_test_() ->
 {setup,
  fun() ->
-         {ok, [Widget]} = file:consult("../test/widget.terms"),
-         {ok, [Glossary]} = file:consult("../test/glossary.terms"),
-         {ok, [Menu]} = file:consult("../test/menu.terms"),
+         {ok, [Widget]} = file:consult("test/widget.terms"),
+         {ok, [Glossary]} = file:consult("test/glossary.terms"),
+         {ok, [Menu]} = file:consult("test/menu.terms"),
          ObjList = {struct, [{<<"objects">>,
                               [ {struct, [{<<"id">>, I}]} ||
                                   I <- lists:seq(1, 5) ]}]},

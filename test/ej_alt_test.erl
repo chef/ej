@@ -5,9 +5,9 @@
 ej_alt_test_() ->
 {setup,
  fun() ->
-         {ok, [Widget]} = file:consult("../test/widget.alt_terms"),
-         {ok, [Glossary]} = file:consult("../test/glossary.alt_terms"),
-         {ok, [Menu]} = file:consult("../test/menu.alt_terms"),
+         {ok, [Widget]} = file:consult("test/widget.alt_terms"),
+         {ok, [Glossary]} = file:consult("test/glossary.alt_terms"),
+         {ok, [Menu]} = file:consult("test/menu.alt_terms"),
          ObjList = {[{<<"objects">>,
                       [ {[{<<"id">>, I}]} ||
                           I <- lists:seq(1, 5) ]}]},
