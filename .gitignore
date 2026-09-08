@@ -7,3 +7,6 @@ doc/edoc-info
 ebin
 .concrete/
 deps/
+
+# rebar3
+_build/
